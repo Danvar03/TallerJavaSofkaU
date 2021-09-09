@@ -2,6 +2,7 @@ import ejercicio1.MayorMenorEsIgual;
 import ejercicio2.CompararNumeros;
 import ejercicio3.AreaCirculo;
 import ejercicio4.Producto;
+import ejercicio5.ParImpar;
 
 import javax.swing.JOptionPane;
 import java.util.Scanner;
@@ -45,20 +46,24 @@ public class Main {
                         break;
                     case 2:
                         CompararNumeros comparar = new CompararNumeros();
-                        int num1 =Integer.parseInt(JOptionPane.showInputDialog("Ingese el numero Uno"));
-                        int num2 =Integer.parseInt(JOptionPane.showInputDialog("Ingese el numero Dos"));
+                        int num1 = Integer.parseInt(JOptionPane.showInputDialog("Ingese el numero Uno"));
+                        int num2 = Integer.parseInt(JOptionPane.showInputDialog("Ingese el numero Dos"));
                         comparar.comparar(num1, num2);
                         break;
                     case 3:
                         AreaCirculo area = new AreaCirculo();
-                        Double radio =Double.parseDouble(JOptionPane.showInputDialog("Digite el valor numerico para el radio del circulo "));
-                        JOptionPane.showMessageDialog(null,"El are del circulo es: " + String.format("%.2f", area.calcularAreaCirculo(radio)));
+                        Double radio = Double.parseDouble(JOptionPane.showInputDialog("Digite el valor numerico para el radio del circulo "));
+                        JOptionPane.showMessageDialog(null, "El are del circulo es: " + String.format("%.2f", area.calcularAreaCirculo(radio)));
 
                         break;
-                    case 4 :
-                       Double precio = Double.parseDouble(JOptionPane.showInputDialog(null,"Ingrese el valor del producto "));
-                       Producto producto = new Producto();
-                        JOptionPane.showMessageDialog(null,"El precio final es: "+producto.calcularIVA(precio));
+                    case 4:
+                        Double precio = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese el valor del producto "));
+                        Producto producto = new Producto();
+                        JOptionPane.showMessageDialog(null, "El precio final es: " + producto.calcularIVA(precio));
+                        break;
+                    case 5:
+                        ParImpar parImpar = new ParImpar();
+                        parImpar.mostrarNumeros();
                         break;
 
                 }
