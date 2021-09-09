@@ -1,4 +1,5 @@
 import ejercicio1.ParEsIgual;
+import ejercicio2.CompararNumeros;
 
 import javax.swing.JOptionPane;
 import java.util.Scanner;
@@ -12,7 +13,7 @@ public class Main {
         while (select != 0) {
             try {
                 String lectura = JOptionPane.showInputDialog("************************\nElige opción:\n1.-  Ejercicio Uno" +
-                "\n2.- Ejercicio Dos\n" +
+                        "\n2.-  Ejercicio Dos\n" +
                         "3.-  Ejercicio Tres\n" +
                         "4.-  Ejercicio Cuatro \n" +
                         "5.-  Ejercicio Cinto \n" +
@@ -33,7 +34,6 @@ public class Main {
 
                 select = Integer.parseInt(lectura);
                 switch (select) {
-
                     case 1:
                         ParEsIgual main = new ParEsIgual();
                         main.compararNumeros(2, 2);
@@ -41,13 +41,20 @@ public class Main {
                         main.compararNumeros(5, -2);
                         main.compararNumeros(3, 8);
                         break;
+                    case 2:
+                        CompararNumeros comparar = new CompararNumeros();
+                        int num1 =Integer.parseInt(JOptionPane.showInputDialog("Ingese el numero Uno"));
+                        int num2 =Integer.parseInt(JOptionPane.showInputDialog("Ingese el numero Dos"));
+                        comparar.comparar(num1, num2);
+                        break;
+                    case 3:
+
+                        break;
 
                 }
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(null, "Uoop! Error!");
             }
-
-
         }
     }
 }
