@@ -1,4 +1,5 @@
 import ejercicio1.MayorMenorEsIgual;
+import ejercicio10.Concatenar;
 import ejercicio2.CompararNumeros;
 import ejercicio3.AreaCirculo;
 import ejercicio4.Producto;
@@ -6,6 +7,7 @@ import ejercicio5.ParImpar;
 import ejercicio6.ParImparFor;
 import ejercicio7.MayorIgualCero;
 import ejercicio8.DiaLaboral;
+import ejercicio9.Remplazar;
 
 import javax.swing.JOptionPane;
 import java.util.Scanner;
@@ -79,14 +81,20 @@ public class Main {
                     case 8:
                         DiaLaboral diaLaboral = new DiaLaboral();
                         diaLaboral.semanaLaboral();
-
-
-                            break;
+                        break;
+                    case 9:
+                        Remplazar remplazar = new Remplazar();
+                        remplazar.reemplaza();
+                        break;
+                    case 10:
+                        Concatenar concatenar = new Concatenar();
+                        concatenar.reemplaza();
+                        break;
 
 
                 }
             } catch (Exception e) {
-                JOptionPane.showMessageDialog(null, "Uoop! Error!");
+                JOptionPane.showMessageDialog(null, "Opcion no valida");
             }
         }
     }
