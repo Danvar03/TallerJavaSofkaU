@@ -1,5 +1,6 @@
-import ejercicio1.ParEsIgual;
+import ejercicio1.MayorMenorEsIgual;
 import ejercicio2.CompararNumeros;
+import ejercicio3.AreaCirculo;
 
 import javax.swing.JOptionPane;
 import java.util.Scanner;
@@ -35,7 +36,7 @@ public class Main {
                 select = Integer.parseInt(lectura);
                 switch (select) {
                     case 1:
-                        ParEsIgual main = new ParEsIgual();
+                        MayorMenorEsIgual main = new MayorMenorEsIgual();
                         main.compararNumeros(2, 2);
                         main.compararNumeros(-5, 5);
                         main.compararNumeros(5, -2);
@@ -48,7 +49,12 @@ public class Main {
                         comparar.comparar(num1, num2);
                         break;
                     case 3:
+                        AreaCirculo area = new AreaCirculo();
+                        Double radio =Double.parseDouble(JOptionPane.showInputDialog("Digite el valor numerico para el radio del circulo "));
+                        JOptionPane.showMessageDialog(null,"El are del circulo es: " + String.format("%.2f", area.calcularAreaCirculo(radio)));
 
+                        break;
+                    case 4 :
                         break;
 
                 }
