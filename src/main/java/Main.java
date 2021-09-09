@@ -5,6 +5,7 @@ import ejercicio4.Producto;
 import ejercicio5.ParImpar;
 import ejercicio6.ParImparFor;
 import ejercicio7.MayorIgualCero;
+import ejercicio8.DiaLaboral;
 
 import javax.swing.JOptionPane;
 import java.util.Scanner;
@@ -70,9 +71,18 @@ public class Main {
                     case 6:
                         ParImparFor parImparFor = new ParImparFor();
                         parImparFor.mostrarNumeros();
+                        break;
                     case 7:
                         MayorIgualCero mayorIgualCero = new MayorIgualCero();
                         mayorIgualCero.mayorIgualCero();
+                        break;
+                    case 8:
+                        DiaLaboral diaLaboral = new DiaLaboral();
+                        diaLaboral.semanaLaboral();
+
+
+                            break;
+
 
                 }
             } catch (Exception e) {
