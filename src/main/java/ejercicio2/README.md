@@ -5,6 +5,6 @@ Al ejercicio anterior agregar entrada por consola de dos valores e indicar si so
 menores o iguales.
 
 
-![Ejercicio 1](ejercicio1.png)
+![Ejercicio 2](ejercicio2.png)
 
 
