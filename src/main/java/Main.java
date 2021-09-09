@@ -3,6 +3,8 @@ import ejercicio2.CompararNumeros;
 import ejercicio3.AreaCirculo;
 import ejercicio4.Producto;
 import ejercicio5.ParImpar;
+import ejercicio6.ParImparFor;
+import ejercicio7.MayorIgualCero;
 
 import javax.swing.JOptionPane;
 import java.util.Scanner;
@@ -65,6 +67,12 @@ public class Main {
                         ParImpar parImpar = new ParImpar();
                         parImpar.mostrarNumeros();
                         break;
+                    case 6:
+                        ParImparFor parImparFor = new ParImparFor();
+                        parImparFor.mostrarNumeros();
+                    case 7:
+                        MayorIgualCero mayorIgualCero = new MayorIgualCero();
+                        mayorIgualCero.mayorIgualCero();
 
                 }
             } catch (Exception e) {
