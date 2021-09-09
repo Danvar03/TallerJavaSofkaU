@@ -1,6 +1,7 @@
 import ejercicio1.MayorMenorEsIgual;
 import ejercicio2.CompararNumeros;
 import ejercicio3.AreaCirculo;
+import ejercicio4.Producto;
 
 import javax.swing.JOptionPane;
 import java.util.Scanner;
@@ -55,6 +56,9 @@ public class Main {
 
                         break;
                     case 4 :
+                       Double precio = Double.parseDouble(JOptionPane.showInputDialog(null,"Ingrese el valor del producto "));
+                       Producto producto = new Producto();
+                        JOptionPane.showMessageDialog(null,"El precio final es: "+producto.calcularIVA(precio));
                         break;
 
                 }
