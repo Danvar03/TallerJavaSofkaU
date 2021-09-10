@@ -4,6 +4,7 @@ import ejercicio11.longitudContador;
 import ejercicio12.PalabrasIguales;
 import ejercicio13.Fecha;
 import ejercicio14.Imprimir;
+import ejercicio15.MenuW;
 import ejercicio2.CompararNumeros;
 import ejercicio3.AreaCirculo;
 import ejercicio4.Producto;
@@ -109,6 +110,9 @@ public class Main {
                     case 14:
                         Imprimir imprimir = new Imprimir();
                         imprimir.leerNumero();
+                    case 15:
+                        MenuW menuW = new MenuW();
+                        menuW.listaMenu();
                 }
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(null, "Opcion no valida");
