@@ -6,6 +6,7 @@ import ejercicio13.Fecha;
 import ejercicio14.Imprimir;
 import ejercicio15.MenuW;
 import ejercicio16.PersonaMenu;
+import ejercicio17.App;
 import ejercicio2.CompararNumeros;
 import ejercicio3.AreaCirculo;
 import ejercicio4.Producto;
@@ -42,8 +43,6 @@ public class Main {
                         "14.- Ejercicio Catorce \n" +
                         "15.- Ejercicio Quince \n" +
                         "16.- Ejercicio Dieciseis \n" +
-                        "17.- Ejercicio Diecisiete \n" +
-                        "18.- Ejercicio Dieciocho \n" +
                         "0.- Salir\n************************\n Ingresa un numero para optener el ejercicio");
 
                 select = Integer.parseInt(lectura);

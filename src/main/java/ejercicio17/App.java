@@ -1,7 +1,5 @@
 package ejercicio17;
 
-import javax.swing.*;
-
 public class App {
 
     private static void llenarArreglo(Electrodomestico[] electrodomesticos){
@@ -40,7 +38,7 @@ public class App {
         return totales;
     }
 
-    public static void main(String[] args) {
+    public  void main(String[] args) {
 
         int precioTelevisores;
         int precioLavadoras ;
@@ -54,9 +52,9 @@ public class App {
         precioLavadoras = calcularPrecioFinal(electrodomesticos)[1];
         precioElectrodomesticos = calcularPrecioFinal(electrodomesticos)[2];
 
-        JOptionPane.showMessageDialog(null, "El precio total de los electrodomesticos es: " + precioElectrodomesticos);
-        JOptionPane.showMessageDialog(null, "El precio total de los televisores es: " + precioTelevisores);
-        JOptionPane.showMessageDialog(null, "El precio total de las lavadoras es: " + precioLavadoras);
+        System.out.println("El precio total de los electrodomesticos es: " + precioElectrodomesticos);
+        System.out.println("El precio total de los televisores es: " + precioTelevisores);
+        System.out.println("El precio total de las lavadoras es: " + precioLavadoras);
 
     }
 
