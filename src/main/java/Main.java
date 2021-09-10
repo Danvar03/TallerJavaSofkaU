@@ -3,6 +3,7 @@ import ejercicio10.Concatenar;
 import ejercicio11.longitudContador;
 import ejercicio12.PalabrasIguales;
 import ejercicio13.Fecha;
+import ejercicio14.Imprimir;
 import ejercicio2.CompararNumeros;
 import ejercicio3.AreaCirculo;
 import ejercicio4.Producto;
@@ -12,7 +13,7 @@ import ejercicio7.MayorIgualCero;
 import ejercicio8.DiaLaboral;
 import ejercicio9.Remplazar;
 
-import javax.swing.JOptionPane;
+import javax.swing.*;
 import java.util.Scanner;
 
 public class Main {
@@ -105,8 +106,9 @@ public class Main {
                     case 13:
                         Fecha fecha = new Fecha();
                         fecha.fecha();
-
-
+                    case 14:
+                        Imprimir imprimir = new Imprimir();
+                        imprimir.leerNumero();
                 }
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(null, "Opcion no valida");
