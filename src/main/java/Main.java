@@ -6,7 +6,6 @@ import ejercicio13.Fecha;
 import ejercicio14.Imprimir;
 import ejercicio15.MenuW;
 import ejercicio16.PersonaMenu;
-import ejercicio17.App;
 import ejercicio2.CompararNumeros;
 import ejercicio3.AreaCirculo;
 import ejercicio4.Producto;

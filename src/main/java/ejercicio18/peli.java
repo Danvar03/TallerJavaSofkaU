@@ -1,5 +1,7 @@
 package ejercicio18;
 
+import javax.swing.*;
+
 public class peli {
     private static void completingSeries(Serie[] series){
         series[0] = new Serie("The Big Bang Theory", 12, "Comedia", "Chuck Lorre, Bill Prady");
@@ -47,7 +49,7 @@ public class peli {
                 game.devolver();
             }
         }
-        System.out.println("Hay " + numberGames + " videojuegos entregados");
+        JOptionPane.showMessageDialog(null,"Hay " + numberGames + " videojuegos entregados");
     }
 
     private static void seriesAndSeason(Serie[] series){
@@ -58,8 +60,8 @@ public class peli {
                 seriesAndSeason = series[i];
             }
         }
-        System.out.println("La serie con mas horas estimadas es: ");
-        System.out.println(seriesAndSeason);
+        JOptionPane.showMessageDialog(null,"La serie con mas horas estimadas es: ");
+        JOptionPane.showMessageDialog(null,seriesAndSeason);
     }
 
     private static void hoursGame(Videojuegos[] videojuegos){
@@ -70,8 +72,8 @@ public class peli {
                 hoursGame = juego;
             }
         }
-        System.out.println("El video juego con mas horas estimadas es: ");
-        System.out.println(hoursGame);
+        JOptionPane.showMessageDialog(null,"El video juego con mas horas estimadas es: "+ hoursGame);
+
     }
 
     public static void main(String[] args) {
@@ -85,14 +87,10 @@ public class peli {
         deliverSeries(series);
         deliverJuegos(videojuegos);
 
-        System.out.println("------------------------");
-        countSeriesDelivered(series);
-        System.out.println("------------------------");
-        countSeriesDelivered(videojuegos);
 
-        System.out.println("------------------------");
+        countSeriesDelivered(series);
+        countSeriesDelivered(videojuegos);
         seriesAndSeason(series);
-        System.out.println("------------------------");
         hoursGame(videojuegos);
     }
 }
