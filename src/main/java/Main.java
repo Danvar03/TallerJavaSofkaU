@@ -1,6 +1,7 @@
 import ejercicio1.MayorMenorEsIgual;
 import ejercicio10.Concatenar;
 import ejercicio11.longitudContador;
+import ejercicio12.PalabrasIguales;
 import ejercicio2.CompararNumeros;
 import ejercicio3.AreaCirculo;
 import ejercicio4.Producto;
@@ -97,6 +98,9 @@ public class Main {
                         longitudCont.longitud(frase);
                         longitudCont.contadorA(frase);
                         break;
+                    case 12:
+                        PalabrasIguales palabrasIguales = new PalabrasIguales();
+                        palabrasIguales.diferencia();
 
 
                 }
