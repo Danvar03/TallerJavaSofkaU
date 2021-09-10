@@ -5,6 +5,7 @@ import ejercicio12.PalabrasIguales;
 import ejercicio13.Fecha;
 import ejercicio14.Imprimir;
 import ejercicio15.MenuW;
+import ejercicio16.PersonaMenu;
 import ejercicio2.CompararNumeros;
 import ejercicio3.AreaCirculo;
 import ejercicio4.Producto;
@@ -107,13 +108,21 @@ public class Main {
                     case 13:
                         Fecha fecha = new Fecha();
                         fecha.fecha();
+                        break;
                     case 14:
                         Imprimir imprimir = new Imprimir();
                         imprimir.leerNumero();
+                        break;
                     case 15:
                         MenuW menuW = new MenuW();
                         menuW.listaMenu();
+                        break;
+                    case 16:
+                        PersonaMenu personaMenu = new PersonaMenu();
+                        personaMenu.MenuPers();
+                        break;
                 }
+
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(null, "Opcion no valida");
             }
