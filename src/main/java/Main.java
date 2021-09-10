@@ -103,6 +103,7 @@ public class Main {
                     case 12:
                         PalabrasIguales palabrasIguales = new PalabrasIguales();
                         palabrasIguales.diferencia();
+                        break;
                     case 13:
                         Fecha fecha = new Fecha();
                         fecha.fecha();
