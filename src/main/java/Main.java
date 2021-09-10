@@ -1,5 +1,6 @@
 import ejercicio1.MayorMenorEsIgual;
 import ejercicio10.Concatenar;
+import ejercicio11.longitudContador;
 import ejercicio2.CompararNumeros;
 import ejercicio3.AreaCirculo;
 import ejercicio4.Producto;
@@ -89,6 +90,12 @@ public class Main {
                     case 10:
                         Concatenar concatenar = new Concatenar();
                         concatenar.reemplaza();
+                        break;
+                    case 11:
+                        longitudContador longitudCont = new longitudContador();
+                        String frase = JOptionPane.showInputDialog("Ingrese una frase: ");
+                        longitudCont.longitud(frase);
+                        longitudCont.contadorA(frase);
                         break;
 
 
